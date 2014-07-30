@@ -1,0 +1,44 @@
+<nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">ng-news</a>
+  </div>
+ 
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div ng-controller="NavController" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <form class="navbar-form navbar-left" role="search" ng-submit="submitPost()" ng-show="signedIn()">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Title" ng-model="post.title">
+      </div>
+      <div class="form-group">
+      <input type="text" class="form-control" placeholder="Link" ng-model="post.url">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    <ul class="nav navbar-nav navbar-right" ng-show="signedIn()">
+      <li>
+        <a href="#/users/{{ currentUser.username }}">
+          <img ng-src="http://www.gravatar.com/avatar/{{ currentUser.md5_hash }}" class="nav-pic" />
+          {{ currentUser.username }}
+        </a>
+      </li>
+      <li>
+        <a href="#" ng-click="logout()">Logout</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right" ng-hide="signedIn()">
+      <li>
+        <a href="#/register">Register</a>
+      </li>
+      <li>
+        <a href="#/login">Log In</a>
+      </li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>

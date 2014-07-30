@@ -1,0 +1,182 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
+/* Included from Thinkster.io tutorial here: http://static.thinkster.io/tutorial/main.css */
+body {
+  background: #F3F3F3;
+}
+
+
+/* NAV BAR */
+.nav-pic {
+  margin: -2px 5px 0 0;
+  max-height: 20px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+
+
+/* MAIN POSTS PAGE */
+.post {
+  background: #fff;
+  padding:15px 0;
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.info {
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.info .url {
+  font-weight: normal;
+  color:#999;
+  font-size:13px;
+  margin-left:5px;
+}
+
+
+/* PROFILE PAGE */
+.prof-img{
+  width:100%;
+  max-width:100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+
+.name {
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+.nav-tabs {
+  margin-top:30px;
+}
+
+.vote {
+  height:20px;
+  cursor: pointer;
+}
+
+.auth-forms {
+  max-width:400px;
+  margin:0 auto;
+  background: #fff;
+  padding:1px 25px 25px 25px;
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.cmt-form {
+  margin-top:30px;
+}
+
+.cmt {
+  margin-top:10px;
+  padding-top:10px;
+  border-top:1px solid #ccc;
+}
+
+.cmt .author {
+  font-size:11px;
+  color:#bbb;
+}
