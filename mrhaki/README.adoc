@@ -1,0 +1,25 @@
+= Links to code
+
+My talks don't have a real presentation, but consists of live
+coding a bunch of code snippets. 
+
+Some of the code snippets shown on stage can be found
+in the following Github repositories. 
+
+Also try
+the +sandbox+ directory which contains the code I have
+written preparing the talks. The +sandbox+ has more code
+than I had time to show in the talks, so you can find
+more snippets there.
+
+== Groovy Goodness
+
+https://github.com/mrhaki/gr8conf2014us-groovy-goodness
+
+== Grails Goodness
+
+https://github.com/mrhaki/gr8conf2014us-grails-goodness
+
+== Gradle Goodness
+
+https://github.com/mrhaki/gr8conf2014us-gradle-goodness
